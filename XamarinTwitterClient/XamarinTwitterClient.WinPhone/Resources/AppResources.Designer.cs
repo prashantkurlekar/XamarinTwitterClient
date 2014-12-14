@@ -10,7 +10,6 @@
 
 namespace XamarinTwitterClient.WinPhone.Resources
 {
-    using System;
 
 
     /// <summary>

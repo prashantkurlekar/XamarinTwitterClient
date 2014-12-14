@@ -22,8 +22,8 @@ namespace XamarinTwitterClient.iOS.Pages
 
 				//Twitter with oauth1 
 				var auth = new OAuth1Authenticator(
-					consumerKey: "B86OgAiSUnxXYXsspdJpvWuKH",
-					consumerSecret: "uyHG0czAlBuXTnjjxOv3EIGDhZ0M9mg92JexjPUqYMZRLVSotW",
+					consumerKey: "Twitter Consumer Key",
+                    consumerSecret: "Twitter Consumer Secret",
 					requestTokenUrl: new Uri("https://api.twitter.com/oauth/request_token"), // the redirect URL for the service
 					authorizeUrl: new Uri("https://api.twitter.com/oauth/authorize"), // the auth URL for the service
 					accessTokenUrl: new Uri("https://api.twitter.com/oauth/access_token"),

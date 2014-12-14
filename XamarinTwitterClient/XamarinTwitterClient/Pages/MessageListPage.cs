@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using XamarinTwitterClient.Services;
 
 namespace XamarinTwitterClient.Pages
@@ -18,7 +13,7 @@ namespace XamarinTwitterClient.Pages
                 Children = {
                     new Label {
                         XAlign = TextAlignment.Center,
-                        Text = "Message List"
+                        Text = "Welcome to Xamarin!!"
                     }
                 }
             };

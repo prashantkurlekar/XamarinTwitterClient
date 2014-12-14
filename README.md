@@ -1,4 +1,4 @@
-XamarinTwitterClient
+Xamarin Twitter Client
 ====================
 
 Xamarin based Twitter client using Xamarin.Forms, Xamarin.Auth and LinqToTwitter

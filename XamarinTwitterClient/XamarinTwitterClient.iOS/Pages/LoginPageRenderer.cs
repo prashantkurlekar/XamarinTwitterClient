@@ -23,16 +23,20 @@ namespace XamarinTwitterClient.iOS.Pages
 				//Twitter with oauth1 
 				var auth = new OAuth1Authenticator(
 					consumerKey: "Twitter Consumer Key",
-                    consumerSecret: "Twitter Consumer Secret",
-					requestTokenUrl: new Uri("https://api.twitter.com/oauth/request_token"), // the redirect URL for the service
-					authorizeUrl: new Uri("https://api.twitter.com/oauth/authorize"), // the auth URL for the service
+					consumerSecret: "Twitter Consumer Secret",
+					// the redirect URL for the service
+					requestTokenUrl: new Uri("https://api.twitter.com/oauth/request_token"), 
+					// the auth URL for the service
+					authorizeUrl: new Uri("https://api.twitter.com/oauth/authorize"), 
 					accessTokenUrl: new Uri("https://api.twitter.com/oauth/access_token"),
-					callbackUrl: new Uri("http://twitter.com")
+					// callback url must be to a page where the URL does not change during navigation
+					callbackUrl: new Uri("https://mobile.twitter.com") 
 				);
 
-				auth.Completed += (sender, eventArgs) =>
+				auth.Completed += async (sender, eventArgs) =>
 				{
-					DismissViewController(true, null);
+					// DismissViewController(true, null);
+					await Element.Navigation.PopModalAsync();
 
 					if (eventArgs.IsAuthenticated)
 					{

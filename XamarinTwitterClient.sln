@@ -208,7 +208,6 @@ Global
 		{8C1ECA05-49A6-4066-8750-B4449B243A29}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = XamarinTwitterClient\XamarinTwitterClient.Android\XamarinTwitterClient.Android.csproj
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = None

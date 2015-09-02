@@ -16,8 +16,8 @@ namespace XamarinTwitterClient.Services
             {
                 CredentialStore = new InMemoryCredentialStore
                 {
-                    ConsumerKey = "B86OgAiSUnxXYXsspdJpvWuKH",
-                    ConsumerSecret = "uyHG0czAlBuXTnjjxOv3EIGDhZ0M9mg92JexjPUqYMZRLVSotW",
+                    ConsumerKey = "Twitter Consumer Key",
+                    ConsumerSecret = "Twitter Consumer Secret",
                     OAuthToken = App.User.Token,
                     OAuthTokenSecret = App.User.TokenSecret,
                     ScreenName = App.User.ScreenName,
